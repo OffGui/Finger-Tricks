@@ -1,1 +1,16 @@
-<p>obstaculos works!</p>
+<div class="container">
+    <h1>Obstáculos</h1>
+    <mat-grid-list cols="4" rowHeight="2:4">
+        <mat-grid-tile *ngFor="let item of fingerboardsCompletos">
+            <mat-card>
+                <img mat-card-image [src]="item.foto" [alt]="item.produto">
+                <mat-card-content>
+                    <h3>{{ item.produto }}</h3>
+                    <ul>
+                        <li>R${{ item.preco }},00</li>
+                    </ul>
+                </mat-card-content>
+              </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

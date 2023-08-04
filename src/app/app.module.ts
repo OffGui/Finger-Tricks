@@ -23,8 +23,6 @@ import { AcessoriosComponent } from './acessorios/acessorios.component';
     ContatoComponent,
     CabecalhoComponent,
     RodapeComponent,
-    FingerboardCompletoComponent,
-    ObstaculosComponent,
     AcessoriosComponent
   ],
   imports: [
