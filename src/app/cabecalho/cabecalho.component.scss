@@ -5,7 +5,6 @@
 }
 mat-toolbar {
   border-bottom: solid 1px $preto;
-  margin-bottom: 30px;
     .btn-secondary {
         background-color: $branco;
         border: none;
@@ -35,4 +34,8 @@ mat-toolbar {
       transition: 0.5 ease-in-out;
     }
   }
+}
+.navbar{
+  width: 100%;
+  
 }
