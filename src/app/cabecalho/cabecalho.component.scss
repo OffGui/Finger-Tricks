@@ -1,0 +1,32 @@
+@import "../app.component.scss";
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  border-bottom: solid 1px $preto;
+  margin-bottom: 30px;
+    .btn-secondary {
+        background-color: $branco;
+        border: none;
+    }
+    padding-bottom: 12px;
+    background-color: $cor-principal;
+    color: $branco;
+    display: flex;
+    h1 {
+    font-family: $fonte-principal;
+    font-size: $extra-grande;
+    color: $preto;
+    padding-top: 15px;
+  }
+  button {
+    font-family: $fonte-secundaria;
+    font-size: $media;
+    color: $preto;
+    margin-top: 10px;
+    &:hover {
+      color: $cor-hover;
+    }
+  }
+}
