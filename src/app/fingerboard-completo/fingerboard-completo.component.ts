@@ -56,8 +56,8 @@ export class FingerboardCompletoComponent {
     },
     {
       id: 6,
-      produto: 'Fingerboard Completo - AK47',
-      foto: 'https://i.ibb.co/SJg2fS5/Finger-Comp-AK47.png',
+      produto: 'Fingerboard Completo - STU RECIFE',
+      foto: 'https://i.ibb.co/Z1zVqB7/STU-nacional-recifre-removebg-preview.png',
       preco: 284,
       favorito: false,
     },
@@ -70,9 +70,23 @@ export class FingerboardCompletoComponent {
     },
     {
       id: 8,
+      produto: 'Fingerboard Completo - STU',
+      foto: 'https://i.ibb.co/kmnCnqR/STU-removebg-preview.png',
+      preco: 159,
+      favorito: false,
+    },
+    {
+      id: 9,
       produto: 'Fingerboard Completo Mini Ramp',
       foto: 'https://i.ibb.co/MCyXTtM/Fingerboard-Completo-Mini-Ramp-1.png',
       preco: 160,
+      favorito: false,
+    },
+    {
+      id: 10,
+      produto: 'Fingerboard Completo - AK47',
+      foto: 'https://i.ibb.co/SJg2fS5/Finger-Comp-AK47.png',
+      preco: 284,
       favorito: false,
     }
   ]

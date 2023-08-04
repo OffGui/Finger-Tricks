@@ -29,22 +29,43 @@ export class ObstaculosComponent {
       id: 2,
       produto: 'MINIATURA HIDRANTE',
       foto: 'https://i.ibb.co/j8ZZzf9/hidrantemini.png',
-      preco: 284,
+      preco: 39,
       favorito: false,
     },
     {
       id: 3,
       produto: 'MINI CONE',
       foto: 'https://i.ibb.co/zrrwwYg/conemini.png',
-      preco: 284,
+      preco: 14,
       favorito: false,
     },
     {
       id: 4,
       produto: 'MINI CESTO PRETO',
       foto: 'https://i.ibb.co/ckf0Pkt/cestopretomini.png',
-      preco: 159,
+      preco: 19,
       favorito: true,
+    },
+    {
+      id: 5,
+      produto: 'DOUBLE IRON BENCH',
+      foto: 'https://i.ibb.co/qNbSZJ7/Double-iron-street-bench.png',
+      preco: 49,
+      favorito: true,
+    },
+    {
+      id: 6,
+      produto: 'IRON ELBOW',
+      foto: 'https://i.ibb.co/JHzjrrr/IRON-ELBOW.png',
+      preco: 19,
+      favorito: false,
+    },
+    {
+      id: 7,
+      produto: 'IRON ELBOW',
+      foto: 'https://i.ibb.co/Lh60q1t/Iron-Rail-removebg-preview.png',
+      preco: 19,
+      favorito: false,
     }
   ]
 
