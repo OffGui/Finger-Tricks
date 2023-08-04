@@ -12,6 +12,9 @@ import { RodapeComponent } from './rodape/rodape.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { FingerboardCompletoComponent } from './fingerboard-completo/fingerboard-completo.component';
+import { ObstaculosComponent } from './obstaculos/obstaculos.component';
+import { AcessoriosComponent } from './acessorios/acessorios.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     QuemSomosComponent,
     ContatoComponent,
     CabecalhoComponent,
-    RodapeComponent
+    RodapeComponent,
+    FingerboardCompletoComponent,
+    ObstaculosComponent,
+    AcessoriosComponent
   ],
   imports: [
     BrowserModule,
