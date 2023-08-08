@@ -3,17 +3,27 @@ import { NgFor, NgIf } from '@angular/common'
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-obstaculos',
   templateUrl: './obstaculos.component.html',
   styleUrls: ['./obstaculos.component.scss'],
   standalone: true,
-  imports: [MatGridListModule, MatCardModule, NgFor, NgIf ]
+  imports: [MatGridListModule, MatCardModule, NgFor, NgIf, CommonModule, MatIconModule ]
 })
 export class ObstaculosComponent {
 
   constructor(private router: Router) { }
+
+  verDetalhes(itemId: string) {
+    this.router.navigate(['/detalhes', itemId])
+  }
+
+  toggleFavorito(index: number): void {
+    this.obstaculos[index].favorito = !this.obstaculos[index].favorito
+  }
 
   nome: string = "Guilherme";
   sobrenome: string = "Prata";
