@@ -17,7 +17,7 @@ export class ObstaculosComponent {
 
   nome: string = "Guilherme";
   sobrenome: string = "Prata";
-  fingerboardsCompletos: Array<any> =[
+  obstaculos: Array<any> =[
     {
       id: 1,
       produto: 'MINIATURA CAVALETE',

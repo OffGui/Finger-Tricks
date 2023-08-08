@@ -7,6 +7,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { FingerboardCompletoComponent } from './fingerboard-completo/fingerboard-completo.component';
 import { ObstaculosComponent } from './obstaculos/obstaculos.component';
+import { DetalhesComponent } from './detalhes/detalhes.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +17,9 @@ const routes: Routes = [
   { path: 'cabecalho', component: CabecalhoComponent },
   { path: 'rodape', component: RodapeComponent },
   { path: 'fingerboard-completo', component: FingerboardCompletoComponent },
-  { path: 'obstaculos', component: ObstaculosComponent }
+  { path: 'obstaculos', component: ObstaculosComponent },
+  { path: 'detalhes/:id', component: DetalhesComponent}
+
 ];
 
 @NgModule({

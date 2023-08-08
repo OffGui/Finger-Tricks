@@ -1,20 +1,29 @@
-import { NgModule } from '@angular/core';
+import {  DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
+
+import ptBr from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
 
+// MEUS BLOCOS DE CÓDIGO
 import { AppComponent } from './app.component';
-import { QuemSomosComponent } from './quem-somos/quem-somos.component';
-import { ContatoComponent } from './contato/contato.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { DetalhesComponent } from './detalhes/detalhes.component';
 import { RodapeComponent } from './rodape/rodape.component';
-
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
 import { FingerboardCompletoComponent } from './fingerboard-completo/fingerboard-completo.component';
+import { ContatoComponent } from './contato/contato.component';
 import { ObstaculosComponent } from './obstaculos/obstaculos.component';
-import { AcessoriosComponent } from './acessorios/acessorios.component';
+
+// MATERIAL UI
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+registerLocaleData(ptBr)
 
 @NgModule({
   declarations: [
@@ -23,17 +32,23 @@ import { AcessoriosComponent } from './acessorios/acessorios.component';
     ContatoComponent,
     CabecalhoComponent,
     RodapeComponent,
-    AcessoriosComponent
+    DetalhesComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FingerboardCompletoComponent,
+    ObstaculosComponent
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt' },
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
