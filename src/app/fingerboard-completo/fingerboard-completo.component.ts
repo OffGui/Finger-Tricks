@@ -98,6 +98,27 @@ export class FingerboardCompletoComponent {
       foto: 'https://i.ibb.co/SJg2fS5/Finger-Comp-AK47.png',
       preco: 284,
       favorito: false,
+    },
+    {
+      id: 11,
+      produto: 'Fingerboard completo sneaker dunk58',
+      foto: 'https://i.ibb.co/sqPjLW6/fing-Comp-sneaker-dunk58-removebg-preview.png',
+      preco: 151.90,
+      favorito: false
+    },
+    {
+      id: 12,
+      produto: 'Fingerboard completo air jordan 1 premium',
+      foto: 'https://i.ibb.co/YDwYK7c/Fing-Comp-Air-Jordan1-Premium-removebg-preview.png',
+      preco: 159.90,
+      favorito: false
+    },
+    {
+      id: 13,
+      produto: 'Fingerboard completo dunk58 premium',
+      foto: 'https://i.ibb.co/59D2vZM/Fing-Comp-Dunk58-Premium-removebg-preview.png',
+      preco: 159.90,
+      favorito: false
     }
   ]
 

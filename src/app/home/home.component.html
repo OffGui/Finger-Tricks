@@ -34,32 +34,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <mat-grid-list cols="4" rowHeight="2:4">
-                    <mat-grid-tile *ngFor="let item of fingerboards; let i = index">
-                        <mat-card>
-                            <img mat-card-image [src]="item.foto" [alt]="item.produto">
-                            <mat-card-content>
-                                <h3>{{ item.produto }}</h3>
-                                <ul>
-                                    <li>{{ item.preco | currency }}</li>
-                                </ul>
-                            </mat-card-content>
-                            <mat-card-actions>
-                                <button
-                                    [class]="item.favorito === false ? 'favorite' : 'favorite-checked'"
-                                    [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
-                                    mat-button
-                                    (click)="toggleFavorito(i)">
-                                    <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
-                                </button> 
-                                <button mat-button (click)="verDetalhes(item.id)">Mais detalhes</button>
-                            </mat-card-actions>
-                        </mat-card>
-                    </mat-grid-tile>
-                </mat-grid-list>
-              </div>
-              <div class="carousel-item">
-                <mat-grid-list cols="4" rowHeight="2:4">
-                    <mat-grid-tile *ngFor="let novidade of lancamentos; let i = index">
+                    <mat-grid-tile *ngFor="let novidade of lancamentos2; let i = index">
                         <mat-card>
                             <img mat-card-image [src]="novidade.foto" [alt]="novidade.produto">
                             <mat-card-content>
@@ -73,7 +48,32 @@
                                     [class]="novidade.favorito === false ? 'favorite' : 'favorite-checked'"
                                     [title]="novidade.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
                                     mat-button
-                                    (click)="toggleFavorito(i)">
+                                    (click)="toggleFavorito2(i)">
+                                    <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                                </button> 
+                                <button mat-button (click)="verDetalhes(novidade.id)">Mais detalhes</button>
+                            </mat-card-actions>
+                        </mat-card>
+                    </mat-grid-tile>
+                </mat-grid-list>
+              </div>
+              <div class="carousel-item">
+                <mat-grid-list cols="4" rowHeight="2:4">
+                    <mat-grid-tile *ngFor="let novidade of lancamentos1; let i = index">
+                        <mat-card>
+                            <img mat-card-image [src]="novidade.foto" [alt]="novidade.produto">
+                            <mat-card-content>
+                                <h3>{{ novidade.produto }}</h3>
+                                <ul>
+                                    <li>{{ novidade.preco | currency }}</li>
+                                </ul>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <button
+                                    [class]="novidade.favorito === false ? 'favorite' : 'favorite-checked'"
+                                    [title]="novidade.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                                    mat-button
+                                    (click)="toggleFavorito1(i)">
                                     <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
                                 </button> 
                                 <button mat-button (click)="verDetalhes(novidade.id)">Mais detalhes</button>

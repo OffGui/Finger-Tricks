@@ -25,6 +25,14 @@ export class HomeComponent {
     this.fingerboards[index].favorito = !this.fingerboards[index].favorito
   }
 
+  toggleFavorito1(index: number): void {
+    this.lancamentos1[index].favorito = !this.lancamentos1[index].favorito
+  }
+
+  toggleFavorito2(index: number): void {
+    this.lancamentos2[index].favorito = !this.lancamentos2[index].favorito
+  }
+
   nome: string = "Guilherme";
   sobrenome: string = "Prata";
   fingerboards: Array<any> =[
@@ -65,42 +73,66 @@ export class HomeComponent {
     }
   ]
 
-  lancamentos: Array<any> =[
+  lancamentos1: Array<any> =[
     {
       id: 1,
-      produto: 'MINIATURA CAVALETE',
-      foto: 'https://i.ibb.co/R710GkK/cavaletemini.png',
-      preco: 24,
+      produto: 'DECK AIR JORDAN 1 34MM',
+      foto: 'https://i.ibb.co/NpxfCZF/Deck-Air-Jordan1-34mm-removebg-preview.png',
+      preco: 64.90,
       favorito: false,
     },
     {
       id: 2,
-      produto: 'MINIATURA HIDRANTE',
-      foto: 'https://i.ibb.co/j8ZZzf9/hidrantemini.png',
+      produto: 'DECK JORDAN BLUE',
+      foto: 'https://i.ibb.co/WnCdJHy/Deck-Sneaker-Jordan-Blue-34mm-removebg-preview.png',
       preco: 39,
       favorito: false,
     },
     {
       id: 3,
-      produto: 'MINI CONE',
-      foto: 'https://i.ibb.co/zrrwwYg/conemini.png',
-      preco: 14,
+      produto: 'FTS BAG CAMUFLADA',
+      foto: 'https://i.ibb.co/dGVJtZ8/finger-Bag-Camo-removebg-preview.png',
+      preco: 29.90,
       favorito: false,
     },
     {
       id: 4,
-      produto: 'MINI CESTO PRETO',
-      foto: 'https://i.ibb.co/ckf0Pkt/cestopretomini.png',
-      preco: 19,
+      produto: 'FTS BAG PRETA SIMPLES',
+      foto: 'https://i.ibb.co/jHW4V9t/bag-removebg-preview.png',
+      preco: 19.90,
       favorito: true,
+    }
+  ]
+
+  lancamentos2: Array<any> =[
+    {
+      id: 1,
+      produto: 'RODA ESPECIAL URETHANE WHITE',
+      foto: 'https://i.ibb.co/3TT5LSL/Roda-Special-urethane-white.png',
+      preco: 64.90,
+      favorito: false,
     },
     {
-      id: 5,
-      produto: 'DOUBLE IRON BENCH',
-      foto: 'https://i.ibb.co/qNbSZJ7/Double-iron-street-bench.png',
-      preco: 49,
-      favorito: true,
+      id: 2,
+      produto: 'TRUCK CROMADO ESPECIAL PRO GOLD',
+      foto: 'https://i.ibb.co/mvZdGLT/TRUCK-PRO-GOLD-removebg-preview.png',
+      preco: 39,
+      favorito: false,
     },
+    {
+      id: 3,
+      produto: 'FINGERBOARD COMPLETO MINI RAMP',
+      foto: 'https://i.ibb.co/MCyXTtM/Fingerboard-Completo-Mini-Ramp-1.png',
+      preco: 29.90,
+      favorito: false,
+    },
+    {
+      id: 4,
+      produto: 'Fingerboard Completo - STU RECIFE',
+      foto: 'https://i.ibb.co/Z1zVqB7/STU-nacional-recifre-removebg-preview.png',
+      preco: 19.90,
+      favorito: true,
+    }
   ]
 
 
