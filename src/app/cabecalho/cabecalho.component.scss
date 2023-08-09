@@ -6,11 +6,11 @@
 mat-toolbar {
   border-bottom: solid 1px $cinza-claro;
     .btn-secondary {
-        background-color: $cor-principal;
+        background-color: $cor-secundaria;
         border: none;
     }
     padding-bottom: 12px;
-    background-color: $cor-principal;
+    background-color: $cor-secundaria;
     h1 {
       text-decoration: none;
       font-family: $fonte-principal;
@@ -18,18 +18,23 @@ mat-toolbar {
       padding-top: 15px;
       a{
         text-decoration: none;
-        color: $preto;
+        color: $branco;
       }
     }
     .dropdown {
       font-family: $fonte-secundaria;
       font-size: $media;
-      color: $preto;
+      .dropdown-item {
+        &:hover {
+          color: $cor-hover;
+          transition: 0.5 ease-in-out;
+        }
+      }
     }
     button {
       font-family: $fonte-secundaria;
       font-size: $media;
-      color: $preto;
+      color: $branco;
       margin-top: 10px;
       &:hover {
         color: $cor-hover;
