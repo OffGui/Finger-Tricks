@@ -65,5 +65,43 @@ export class HomeComponent {
     }
   ]
 
+  lancamentos: Array<any> =[
+    {
+      id: 1,
+      produto: 'MINIATURA CAVALETE',
+      foto: 'https://i.ibb.co/R710GkK/cavaletemini.png',
+      preco: 24,
+      favorito: false,
+    },
+    {
+      id: 2,
+      produto: 'MINIATURA HIDRANTE',
+      foto: 'https://i.ibb.co/j8ZZzf9/hidrantemini.png',
+      preco: 39,
+      favorito: false,
+    },
+    {
+      id: 3,
+      produto: 'MINI CONE',
+      foto: 'https://i.ibb.co/zrrwwYg/conemini.png',
+      preco: 14,
+      favorito: false,
+    },
+    {
+      id: 4,
+      produto: 'MINI CESTO PRETO',
+      foto: 'https://i.ibb.co/ckf0Pkt/cestopretomini.png',
+      preco: 19,
+      favorito: true,
+    },
+    {
+      id: 5,
+      produto: 'DOUBLE IRON BENCH',
+      foto: 'https://i.ibb.co/qNbSZJ7/Double-iron-street-bench.png',
+      preco: 49,
+      favorito: true,
+    },
+  ]
+
 
 }

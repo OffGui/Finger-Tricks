@@ -14,13 +14,13 @@
                             </ul>
                         </mat-card-content>
                         <mat-card-actions>
-                            <button 
-                                [class]="item.favorito === false ? 'favorite' : 'favorite-checked'" 
-                                [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'" 
-                                mat-button 
+                            <button
+                                [class]="item.favorito === false ? 'favorite' : 'favorite-checked'"
+                                [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                                mat-button
                                 (click)="toggleFavorito(i)">
-                            <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
-                            </button>
+                                <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                            </button> 
                             <button mat-button (click)="verDetalhes(item.id)">Mais detalhes</button>
                         </mat-card-actions>
                     </mat-card>
@@ -30,28 +30,67 @@
     </section>
     <section class="lancamentos">
         <h1>lançamentos</h1>
-        <mat-grid-list cols="5" rowHeight="2:4">
-            <mat-grid-tile *ngFor="let item of fingerboards; let i = index">
-                <mat-card>
-                    <img mat-card-image [src]="item.foto" [alt]="item.produto">
-                    <mat-card-content>
-                        <h3>{{ item.produto }}</h3>
-                        <ul>
-                            <li>{{ item.preco | currency }}</li>
-                        </ul>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <button 
-                            [class]="item.favorito === false ? 'favorite' : 'favorite-checked'" 
-                            [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'" 
-                            mat-button 
-                            (click)="toggleFavorito(i)">
-                        <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
-                        </button>
-                        <button mat-button (click)="verDetalhes(item.id)">Mais detalhes</button>
-                    </mat-card-actions>
-                </mat-card>
-            </mat-grid-tile>
-        </mat-grid-list>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <mat-grid-list cols="4" rowHeight="2:4">
+                    <mat-grid-tile *ngFor="let item of fingerboards; let i = index">
+                        <mat-card>
+                            <img mat-card-image [src]="item.foto" [alt]="item.produto">
+                            <mat-card-content>
+                                <h3>{{ item.produto }}</h3>
+                                <ul>
+                                    <li>{{ item.preco | currency }}</li>
+                                </ul>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <button
+                                    [class]="item.favorito === false ? 'favorite' : 'favorite-checked'"
+                                    [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                                    mat-button
+                                    (click)="toggleFavorito(i)">
+                                    <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                                </button> 
+                                <button mat-button (click)="verDetalhes(item.id)">Mais detalhes</button>
+                            </mat-card-actions>
+                        </mat-card>
+                    </mat-grid-tile>
+                </mat-grid-list>
+              </div>
+              <div class="carousel-item">
+                <mat-grid-list cols="4" rowHeight="2:4">
+                    <mat-grid-tile *ngFor="let novidade of lancamentos; let i = index">
+                        <mat-card>
+                            <img mat-card-image [src]="novidade.foto" [alt]="novidade.produto">
+                            <mat-card-content>
+                                <h3>{{ novidade.produto }}</h3>
+                                <ul>
+                                    <li>{{ novidade.preco | currency }}</li>
+                                </ul>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <button
+                                    [class]="novidade.favorito === false ? 'favorite' : 'favorite-checked'"
+                                    [title]="novidade.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                                    mat-button
+                                    (click)="toggleFavorito(i)">
+                                    <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                                </button> 
+                                <button mat-button (click)="verDetalhes(novidade.id)">Mais detalhes</button>
+                            </mat-card-actions>
+                        </mat-card>
+                    </mat-grid-tile>
+                </mat-grid-list>
+              </div>  
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span id="next" class="visually-hidden"><strong>Next</strong></span>
+            </button>
+          </div>
     </section>
 </div>
