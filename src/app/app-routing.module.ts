@@ -8,6 +8,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { FingerboardCompletoComponent } from './fingerboard-completo/fingerboard-completo.component';
 import { ObstaculosComponent } from './obstaculos/obstaculos.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
+import { RodasComponent } from './rodas/rodas.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'rodape', component: RodapeComponent },
   { path: 'fingerboard-completo', component: FingerboardCompletoComponent },
   { path: 'obstaculos', component: ObstaculosComponent },
+  { path: 'rodas', component: RodasComponent },
   { path: 'detalhes/:id', component: DetalhesComponent}
 
 ];

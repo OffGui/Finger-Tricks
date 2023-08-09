@@ -22,6 +22,7 @@ import { ObstaculosComponent } from './obstaculos/obstaculos.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RodasComponent } from './rodas/rodas.component';
 
 registerLocaleData(ptBr)
 

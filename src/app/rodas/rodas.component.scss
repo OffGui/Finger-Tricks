@@ -1,0 +1,90 @@
+@import "../app.component.scss";
+
+.container {
+  width: 1140px;
+  display: block;
+  margin: auto;
+  h1 {
+    padding-top: 50px;
+    padding-left: 15px;
+    font-family: $fonte-secundaria;
+    font-size: $grande;
+    color: $cinza-escuro;
+  }
+  h2 {
+    padding-top: 50px;
+    padding-left: 15px;
+    font-family: $fonte-secundaria;
+    font-size: $grande;
+    color: $cinza-escuro;
+  }
+  mat-grid-tile {
+    mat-card {
+      background-color: $branco;
+      margin: 10px;
+      box-shadow: $card-shadow;
+      transition: $card-transition;
+      &:hover {
+        box-shadow: $card-shadow-hover;
+      }
+      img {
+        width: 100%;
+      }
+      mat-card-content {
+        h3 {
+          text-align: center;
+          font-family: $fonte-secundaria;
+          font-size: $grande;
+          color: $cinza-escuro;
+          padding-top: 15px;
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          list-style-type: none;
+          li {
+            color: $cinza-escuro;
+            font-size: $media;
+          }
+        }
+      }
+      mat-card-actions {
+        padding-bottom: 20px;
+        padding-top: 30px;
+        gap: 10px;
+        .favorite {
+          width: 20%;
+          background-color: $branco;
+          border: 1px solid $cor-secundaria;
+          mat-icon {
+            color: $cor-secundaria;
+          }
+        }
+        .favorite-checked {
+          width: 20%;
+          background-color: $cor-secundaria;
+        }
+        button {
+          display: block;
+          width: 80%;
+          height: 48px;
+          cursor: pointer;
+          border: none;
+          border-radius: 4px;
+          background-color: $cor-secundaria;
+          color: $branco;
+          font-family: $fonte-secundaria;
+          font-size: $media;
+        }
+      }
+    }
+  }
+  button{
+      span {
+        filter: invert(100%);
+        color: $preto;
+      }
+  }
+  
+}
