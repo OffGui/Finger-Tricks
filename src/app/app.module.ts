@@ -22,7 +22,6 @@ import { ObstaculosComponent } from './obstaculos/obstaculos.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RodasComponent } from './rodas/rodas.component';
 
 registerLocaleData(ptBr)
 
@@ -32,7 +31,6 @@ registerLocaleData(ptBr)
     QuemSomosComponent,
     ContatoComponent,
     CabecalhoComponent,
-    RodapeComponent,
     DetalhesComponent,
   ],
   imports: [
@@ -44,7 +42,8 @@ registerLocaleData(ptBr)
     MatButtonModule,
     MatToolbarModule,
     FingerboardCompletoComponent,
-    ObstaculosComponent
+    ObstaculosComponent,
+    RodapeComponent
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
