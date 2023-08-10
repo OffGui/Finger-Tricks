@@ -5,11 +5,21 @@
   display: block;
   margin: auto;
   h1 {
-    padding-top: 10px;
-    font-family: $fonte-principal;
+    padding-top: 50px;
+    padding-left: 15px;
+    font-family: $fonte-secundaria;
     font-size: $grande;
     color: $cinza-escuro;
+    border-bottom: 1px solid $preto;
   }
+  h2 {
+    padding-top: 50px;
+    padding-left: 15px;
+    font-family: $fonte-secundaria;
+    font-size: $grande;
+    color: $cinza-escuro;
+    border-bottom: 1px solid $preto;
+  } 
   mat-card {
     background-color: $branco;
     margin: 10px;

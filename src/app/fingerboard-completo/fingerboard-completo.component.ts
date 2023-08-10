@@ -55,21 +55,14 @@ export class FingerboardCompletoComponent {
       produto: 'Fingerboard Completo - Cheese and Fingers',
       foto: 'https://i.ibb.co/fdgk5cS/Fingerboard-Completo-Inove-Cheese-and-Fingers.png',
       preco: 159,
-      favorito: true,
-    },
-    {
-      id: 5,
-      produto: 'Fingerboard Completo - Cheese and Fingers',
-      foto: 'https://i.ibb.co/fdgk5cS/Fingerboard-Completo-Inove-Cheese-and-Fingers.png',
-      preco: 159,
-      favorito: true,
+      favorito: false,
     },
     {
       id: 6,
       produto: 'Fingerboard Completo - STU RECIFE',
       foto: 'https://i.ibb.co/Z1zVqB7/STU-nacional-recifre-removebg-preview.png',
       preco: 284,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 7,
@@ -83,7 +76,7 @@ export class FingerboardCompletoComponent {
       produto: 'Fingerboard Completo - STU',
       foto: 'https://i.ibb.co/kmnCnqR/STU-removebg-preview.png',
       preco: 159,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 9,
@@ -111,14 +104,14 @@ export class FingerboardCompletoComponent {
       produto: 'Fingerboard completo air jordan 1 premium',
       foto: 'https://i.ibb.co/YDwYK7c/Fing-Comp-Air-Jordan1-Premium-removebg-preview.png',
       preco: 159.90,
-      favorito: false
+      favorito: true
     },
     {
       id: 13,
       produto: 'Fingerboard completo dunk58 premium',
       foto: 'https://i.ibb.co/59D2vZM/Fing-Comp-Dunk58-Premium-removebg-preview.png',
       preco: 159.90,
-      favorito: false
+      favorito: true
     }
   ]
 

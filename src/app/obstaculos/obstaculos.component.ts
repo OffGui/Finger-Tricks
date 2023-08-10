@@ -76,6 +76,13 @@ export class ObstaculosComponent {
       foto: 'https://i.ibb.co/Lh60q1t/Iron-Rail-removebg-preview.png',
       preco: 19,
       favorito: false,
+    },
+    {
+      id: 8,
+      produto: 'Rampa Mini-Ramp PRO',
+      foto: 'https://i.ibb.co/25ZPmgf/Rampa-Mini-Ramp-PRO-Attack-removebg-preview.png',
+      preco: 260,
+      favorito: true
     }
   ]
 

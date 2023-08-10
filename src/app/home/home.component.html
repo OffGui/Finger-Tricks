@@ -1,33 +1,6 @@
 <div class="container">
     <h1 class="h1">Olá {{ nome + " " + sobrenome }}!</h1>
-    <h2>Seus produtos favoritos</h2>
-    <section>
-        <mat-grid-list cols="4" rowHeight="2:4">
-            <div *ngFor="let item of fingerboards; let i = index">
-                <mat-grid-tile *ngIf="item.favorito">
-                    <mat-card>
-                        <img mat-card-image [src]="item.foto" [alt]="item.produto">
-                        <mat-card-content>
-                            <h3>{{ item.produto }}</h3>
-                            <ul>
-                                <li>{{ item.preco | currency }}</li>
-                            </ul>
-                        </mat-card-content>
-                        <mat-card-actions>
-                            <button
-                                [class]="item.favorito === false ? 'favorite' : 'favorite-checked'"
-                                [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
-                                mat-button
-                                (click)="toggleFavorito(i)">
-                                <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
-                            </button> 
-                            <button mat-button (click)="verDetalhes(item.id)">Mais detalhes</button>
-                        </mat-card-actions>
-                    </mat-card>
-                </mat-grid-tile>
-            </div>
-        </mat-grid-list>
-    </section>
+    
     <section class="lancamentos">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">

@@ -2,7 +2,7 @@
     <h2>Seus produtos favoritos</h2>
     <section class="lista-favoritos">
         <mat-grid-list cols="4" rowHeight="2:4">
-            <div *ngFor="let completo of obstaculos; let i = index">
+            <div *ngFor="let completo of trucks; let i = index">
                 <mat-grid-tile *ngIf="completo.favorito">
                     <mat-card>
                         <img mat-card-image [src]="completo.foto" [alt]="completo.produto">
@@ -27,15 +27,15 @@
             </div>
         </mat-grid-list>
     </section>
-    <h1>Obstáculos em miniaturas</h1>
+    <h1>Trucks</h1>
     <mat-grid-list cols="4" rowHeight="2:4">
-        <mat-grid-tile *ngFor="let item of obstaculos; let i = index">
+        <mat-grid-tile *ngFor="let item of trucks; let i = index">
             <mat-card>
                 <img mat-card-image [src]="item.foto" [alt]="item.produto">
                 <mat-card-content>
                     <h3>{{ item.produto }}</h3>
                     <ul>
-                        <li>R${{ item.preco }},00</li>
+                        <li>{{ item.preco | currency }}</li>
                     </ul>
                 </mat-card-content>
                 <mat-card-actions>

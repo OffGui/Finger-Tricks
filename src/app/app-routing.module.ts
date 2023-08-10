@@ -9,6 +9,8 @@ import { FingerboardCompletoComponent } from './fingerboard-completo/fingerboard
 import { ObstaculosComponent } from './obstaculos/obstaculos.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
 import { RodasComponent } from './rodas/rodas.component';
+import { TodosOsProdutosComponent } from './todos-os-produtos/todos-os-produtos.component';
+import { TrucksComponent } from './trucks/trucks.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'fingerboard-completo', component: FingerboardCompletoComponent },
   { path: 'obstaculos', component: ObstaculosComponent },
   { path: 'rodas', component: RodasComponent },
-  { path: 'detalhes/:id', component: DetalhesComponent}
+  { path: 'detalhes/:id', component: DetalhesComponent},
+  { path: 'todos-os-produtos', component: TodosOsProdutosComponent },
+  { path: 'trucks', component: TrucksComponent }
 
 ];
 
