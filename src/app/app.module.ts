@@ -29,7 +29,6 @@ registerLocaleData(ptBr)
   declarations: [
     AppComponent,
     QuemSomosComponent,
-    ContatoComponent,
     CabecalhoComponent,
     DetalhesComponent,
   ],
