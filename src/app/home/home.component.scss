@@ -138,5 +138,17 @@
       }
     }
   }
-  
+  @media screen and (max-width: 768px) {
+    .container{
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .container{
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
 }
