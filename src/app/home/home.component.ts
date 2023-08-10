@@ -150,5 +150,12 @@ export class HomeComponent {
     }
   ]
 
+  qualidades: Array<any> =[
+    {
+      nome: 'qualidades',
+      foto: 'https://i.ibb.co/p2mbgy8/qualidades-removebg-preview.png'
+    }
+  ]
+
 
 }
