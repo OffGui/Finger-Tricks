@@ -1,24 +1,24 @@
 <div class="container">
     <h1>Olá {{ nome }} {{ sobrenome }}!</h1>
     <mat-grid-list cols="4" rowHeight="2:4">
-        <mat-grid-tile *ngFor="let item of fingerboardsCompletos; let i = index">
+        <mat-grid-tile *ngFor="let completos of fingerboardsCompletos; let i = index">
             <mat-card>
-                <img mat-card-image [src]="item.foto" [alt]="item.produto">
+                <img mat-card-image [src]="completos.foto" [alt]="completos.produto">
                 <mat-card-content>
-                    <h3>{{ item.produto }}</h3>
+                    <h3>{{ completos.produto }}</h3>
                     <ul>
-                        <li>R${{ item.preco }},00</li>
+                        <li>R${{ completos.preco }},00</li>
                     </ul>
                 </mat-card-content>
                 <mat-card-actions>
                     <button 
-                        [class]="item.favorito === false ? 'favorite' : 'favorite-checked'" 
-                        [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'" 
+                        [class]="completos.favorito === false ? 'favorite' : 'favorite-checked'" 
+                        [title]="completos.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'" 
                         mat-button 
                         (click)="toggleFavorito(i)">
                     <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
                     </button>
-                    <button mat-button (click)="verDetalhes(item.id)">Mais detalhes</button>
+                    <button mat-button (click)="verDetalhes(completos.id)">Mais detalhes</button>
                 </mat-card-actions>
               </mat-card>
         </mat-grid-tile>

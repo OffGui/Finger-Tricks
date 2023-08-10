@@ -44,9 +44,21 @@
       padding-bottom: 20px;
       padding-top: 30px;
       gap: 10px;
+      .favorite {
+        width: 20%;
+        background-color: $branco;
+        border: 1px solid $cor-secundaria;
+        mat-icon {
+          color: $cor-secundaria;
+        }
+      }
+      .favorite-checked {
+        width: 20%;
+        background-color: $cor-secundaria;
+      }
       button {
         display: block;
-        width: 50%;
+        width: 80%;
         height: 48px;
         cursor: pointer;
         border: none;

@@ -29,9 +29,23 @@
         </mat-grid-list>
     </section>
     <section class="lancamentos">
-        <h1>lançamentos</h1>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <div class="setas">
+                    <h1>lançamentos</h1>
+                    <div class="previous">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                    </div>
+                    <div class="next">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span id="next" class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
               <div class="carousel-item active">
                 <mat-grid-list cols="4" rowHeight="2:4">
                     <mat-grid-tile *ngFor="let novidade of lancamentos2; let i = index">
@@ -83,14 +97,17 @@
                 </mat-grid-list>
               </div>  
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span id="next" class="visually-hidden"><strong>Next</strong></span>
-            </button>
           </div>
+    </section>
+    <section class="diferenciais">
+        <div class="zoom">
+            <mat-grid-list cols="3" rowHeight="4:4">
+                <mat-grid-tile *ngFor="let card of diferenciais">
+                    <mat-card>
+                        <img mat-card-image [src]="card.foto" [alt]="card.nome"> 
+                    </mat-card>                  
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
     </section>
 </div>

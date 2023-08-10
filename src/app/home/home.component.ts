@@ -41,21 +41,21 @@ export class HomeComponent {
       produto: 'Fingerboard Completo Jordan Azul',
       foto: 'https://i.ibb.co/p3sjvbm/Fingerboard-Completo-Inove-Collab-Guy-Sneaker-Jordan-Azul.png',
       preco: 284.90,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 2,
       produto: 'Fingerboard Completo Jordan Red',
       foto: 'https://i.ibb.co/K2DTWxS/Finger-Comp-J1.png',
       preco: 189.99,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 3,
       produto: 'Fingerboard Completo - Rod Filmes',
       foto: 'https://i.ibb.co/NZBGGBn/Fingerboard-Completo-Inove-Rod-Filmes.png',
       preco: 199.90,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 4,
@@ -116,22 +116,37 @@ export class HomeComponent {
       id: 2,
       produto: 'TRUCK CROMADO ESPECIAL PRO GOLD',
       foto: 'https://i.ibb.co/mvZdGLT/TRUCK-PRO-GOLD-removebg-preview.png',
-      preco: 39,
+      preco: 39.90,
       favorito: false,
     },
     {
       id: 3,
       produto: 'FINGERBOARD COMPLETO MINI RAMP',
       foto: 'https://i.ibb.co/MCyXTtM/Fingerboard-Completo-Mini-Ramp-1.png',
-      preco: 29.90,
+      preco: 290.00,
       favorito: false,
     },
     {
       id: 4,
       produto: 'Fingerboard Completo - STU RECIFE',
       foto: 'https://i.ibb.co/Z1zVqB7/STU-nacional-recifre-removebg-preview.png',
-      preco: 19.90,
+      preco: 199.90,
       favorito: true,
+    }
+  ]
+
+  diferenciais: Array<any> =[
+    {
+      nome: 'Diferencial parcelamento',
+      foto: 'https://i.ibb.co/2sjb8PQ/diferenciais-12x.jpg',
+    },
+    {
+      nome: 'Diferencial frete',
+      foto: 'https://i.ibb.co/PMZwrRR/diferenciais-frete.jpg',
+    },
+    {
+      nome: 'Diferencial PIX',
+      foto: 'https://i.ibb.co/Y3QG0BX/diferenciais-pix.jpg',
     }
   ]
 
