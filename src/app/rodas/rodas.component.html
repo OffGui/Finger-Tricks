@@ -18,7 +18,7 @@
                                 [title]="completo.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
                                 mat-button
                                 (click)="toggleFavorito(i)">
-                                <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="star"></mat-icon>
                             </button> 
                             <button mat-button (click)="verDetalhes(completo.id)">Mais detalhes</button>
                         </mat-card-actions>
@@ -44,7 +44,7 @@
                         [title]="item.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'" 
                         mat-button 
                         (click)="toggleFavorito(i)">
-                    <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                    <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="star"></mat-icon>
                     </button>
                     <button mat-button (click)="verDetalhes(item.id)">Mais detalhes</button>
                 </mat-card-actions>

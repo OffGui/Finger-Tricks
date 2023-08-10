@@ -15,7 +15,6 @@ import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { FingerboardCompletoComponent } from './fingerboard-completo/fingerboard-completo.component';
-import { ContatoComponent } from './contato/contato.component';
 import { ObstaculosComponent } from './obstaculos/obstaculos.component';
 
 // MATERIAL UI
