@@ -46,4 +46,20 @@ mat-toolbar {
     width: 100%;
   
   }
+
+  @media screen and (max-width: 768px) {
+    mat-toolbar {
+      h1 {
+        font-size: $media;
+      }
+      .navigation {
+        button {
+          font-size: $pequena;
+        }
+      }
+      .btn-secondary {
+        font-size: $pequena;
+      }
+    }
+  }
   

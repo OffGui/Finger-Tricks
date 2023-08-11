@@ -23,7 +23,7 @@
             <textarea matInput [formControl]="mensagem"></textarea>
             <mat-error *ngIf="mensagem.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field>
-        <button mat-button [disabled]="(nome.invalid || email.invalid || mensagem.invalid ? 'true' : '')" type="submit">
+        <button class="botao" mat-button [disabled]="(nome.invalid || email.invalid || mensagem.invalid ? 'true' : '')" type="submit">
             Enviar
         </button>
     </form>
