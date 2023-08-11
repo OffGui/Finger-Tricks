@@ -50,10 +50,12 @@ mat-toolbar {
   @media screen and (max-width: 768px) {
     mat-toolbar {
       h1 {
-        font-size: $media;
+        font-size: $pequena;
       }
       .navigation {
         button {
+          background-color: aqua;
+          padding-left: 0px;
           font-size: $pequena;
         }
       }

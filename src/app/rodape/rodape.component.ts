@@ -1,37 +1,33 @@
-import {Component} from '@angular/core';
-import { Router } from '@angular/router';
-import { NgFor, NgIf } from '@angular/common';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-rodape',
   templateUrl: './rodape.component.html',
-  styleUrls: ['./rodape.component.scss'],
-  standalone: true,
-  imports: [ MatIconModule, MatToolbarModule, MatButtonModule, NgFor, NgIf ],
+  styleUrls: ['./rodape.component.scss']
 })
 export class RodapeComponent {
 
-  constructor(private router: Router) { }
 
-  redesSociais: Array<any> =[
+
+  title: string = 'FingerTricks';
+  copyright: string = 'Desenvolvido em 2023';
+  developer: string = 'Start Tech TOTVS';
+
+  redesSociais: Array<any> = [
     {
-      nome: 'Facebook',
-      link: 'https://www.facebook.com/',
-      icone: 'https://i.ibb.co/McvvPPf/facebookicon.png',
+      rede: 'Facebook',
+      link: 'http://www.facebook.com',
+      icone: 'https://i.ibb.co/LZYBg8Q/logotipo-circular-do-facebook.png'
     },
     {
-      nome: 'Instagram',
-      link: 'https://www.instagram.com/',
-      icone: 'https://i.ibb.co/zhfF09N/instagramicon.png',
+      rede: 'Instagram',
+      link: 'http://www.instagram.com/j_yonaha',
+      icone: 'https://i.ibb.co/0nNbcgS/instagram-1.png'
     },
     {
-      nome: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/guilhermesprata/',
-      icone: 'https://i.ibb.co/R6wrp9q/linkedinicon.png',
+      rede: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/joÃ£o-ionafa-72b680211/',
+      icone: 'https://i.ibb.co/12YfRcr/linkedin.png'
     }
   ]
-
 }

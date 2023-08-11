@@ -1,16 +1,15 @@
-<footer>
-  <div class="container">
-    <div class="copyright">
-      <h1>FingerTricks</h1>
-    </div>
-    <div class="social-links">
-        <ul>
-            <li *ngFor="let footer of redesSociais">
-                <a [href]="footer.link" target="_blank">
-                    <img src="{{ footer.icone }}" alt="{{ footer.nome }}">
-                </a>
-            </li>
-        </ul>
-    </div>
-  </div>
+<footer class="fundo">
+  <section class="container">
+      <div class="title-redes">
+          <div id="title-rodape">
+              <h3>&#169; {{ title }} | {{ copyright }} {{ developer }}</h3>
+          </div>
+          <div class="redes-sociais">
+              <ul>
+                  <li *ngFor="let rede of redesSociais"><a target="_blank" href="{{rede.link}}"><img class="icon"
+                              src="{{ rede.icone }}" alt="" /></a></li>
+              </ul>
+          </div>
+      </div>
+  </section>
 </footer>

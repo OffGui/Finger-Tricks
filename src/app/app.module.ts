@@ -30,6 +30,7 @@ registerLocaleData(ptBr)
     QuemSomosComponent,
     CabecalhoComponent,
     DetalhesComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,7 @@ registerLocaleData(ptBr)
     MatToolbarModule,
     FingerboardCompletoComponent,
     ObstaculosComponent,
-    RodapeComponent
+    
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },

@@ -3,5 +3,25 @@
 .container {
     width: 1140px;
     min-height: calc(100vh - 226px);
-
+    .quem-somos {
+        h1 {
+            padding-top: 50px;
+            font-family: $fonte-secundaria;
+        }
+    }
+    .missao {
+        h1 {
+            font-family: $fonte-secundaria;
+        }
+    }
+    .visao {
+        h1 {
+            font-family: $fonte-secundaria;
+        }
+    }
+    .valores {
+        h1 {
+            font-family: $fonte-secundaria;
+        }
+    }
 }
