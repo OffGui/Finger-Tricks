@@ -1,7 +1,7 @@
 <div class="container">
     <h2>Seus produtos favoritos</h2>
     <section class="lista-favoritos">
-        <mat-grid-list cols="4" rowHeight="2:4">
+        <mat-grid-list cols="4" cols.sm="1" rowHeight="2:4">
             <div *ngFor="let completo of fingerboardsCompletos; let i = index">
                 <mat-grid-tile *ngIf="completo.favorito">
                     <mat-card>

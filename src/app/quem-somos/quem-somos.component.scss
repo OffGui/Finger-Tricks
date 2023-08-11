@@ -5,7 +5,7 @@
     min-height: calc(100vh - 226px);
     .quem-somos {
         h1 {
-            padding-top: 50px;
+            padding-top: 50px;  
             font-family: $fonte-secundaria;
         }
     }
@@ -22,6 +22,15 @@
     .valores {
         h1 {
             font-family: $fonte-secundaria;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+        .quem-somos{
+           max-width: 34%;
         }
     }
 }
