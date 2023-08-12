@@ -21,12 +21,12 @@ export class RodapeComponent {
     },
     {
       rede: 'Instagram',
-      link: 'http://www.instagram.com/j_yonaha',
+      link: 'https://www.instagram.com/',
       icone: 'https://i.ibb.co/0nNbcgS/instagram-1.png'
     },
     {
       rede: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/joÃ£o-ionafa-72b680211/',
+      link: 'https://www.linkedin.com/in/guilhermesprata/',
       icone: 'https://i.ibb.co/12YfRcr/linkedin.png'
     }
   ]
