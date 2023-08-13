@@ -5,13 +5,14 @@ import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @Component({
   selector: 'app-fingerboard-completo',
   templateUrl: './fingerboard-completo.component.html',
   styleUrls: ['./fingerboard-completo.component.scss'],
   standalone: true,
-  imports: [MatGridListModule, MatCardModule, NgFor, NgIf, CommonModule, MatIconModule ]
+  imports: [ MatGridListModule, MatCardModule, NgFor, NgIf, CommonModule, MatIconModule, FlexLayoutModule ]
 
 })
 export class FingerboardCompletoComponent {
@@ -34,14 +35,14 @@ export class FingerboardCompletoComponent {
       produto: 'Fingerboard Completo Jordan Azul',
       foto: 'https://i.ibb.co/p3sjvbm/Fingerboard-Completo-Inove-Collab-Guy-Sneaker-Jordan-Azul.png',
       preco: 284,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 2,
       produto: 'Fingerboard Completo Jordan Red',
       foto: 'https://i.ibb.co/K2DTWxS/Finger-Comp-J1.png',
       preco: 284,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 3,
@@ -62,7 +63,7 @@ export class FingerboardCompletoComponent {
       produto: 'Fingerboard Completo - STU RECIFE',
       foto: 'https://i.ibb.co/Z1zVqB7/STU-nacional-recifre-removebg-preview.png',
       preco: 284,
-      favorito: true,
+      favorito: false,
     },
     {
       id: 7,
@@ -76,7 +77,7 @@ export class FingerboardCompletoComponent {
       produto: 'Fingerboard Completo - STU',
       foto: 'https://i.ibb.co/kmnCnqR/STU-removebg-preview.png',
       preco: 159,
-      favorito: true,
+      favorito: false,
     },
     {
       id: 9,
@@ -104,14 +105,14 @@ export class FingerboardCompletoComponent {
       produto: 'Fingerboard completo air jordan 1 premium',
       foto: 'https://i.ibb.co/YDwYK7c/Fing-Comp-Air-Jordan1-Premium-removebg-preview.png',
       preco: 159.90,
-      favorito: true
+      favorito: false
     },
     {
       id: 13,
       produto: 'Fingerboard completo dunk58 premium',
       foto: 'https://i.ibb.co/59D2vZM/Fing-Comp-Dunk58-Premium-removebg-preview.png',
       preco: 159.90,
-      favorito: true
+      favorito: false
     }
   ]
 

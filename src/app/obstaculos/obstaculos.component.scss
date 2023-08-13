@@ -5,7 +5,8 @@
   display: block;
   margin: auto;
   h1 {
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-left: 15px;
     font-family: $fonte-secundaria;
     font-size: $grande;
     color: $cinza-escuro;
@@ -18,7 +19,7 @@
     font-size: $grande;
     color: $cinza-escuro;
     border-bottom: 1px solid $preto;
-  }
+  } 
   mat-card {
     background-color: $branco;
     margin: 10px;
@@ -77,6 +78,21 @@
         font-family: $fonte-secundaria;
         font-size: $media;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    min-height: calc(100vh - 226px);
+    display: block;
+    margin: auto;
+    width: 90%;
+    h2{
+      border-bottom: 1px solid $preto;
+    }
+    .content {
+      padding: 16px;
     }
   }
 }

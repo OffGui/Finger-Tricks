@@ -5,13 +5,14 @@ import { MatCardModule } from '@angular/material/card';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-obstaculos',
   templateUrl: './obstaculos.component.html',
   styleUrls: ['./obstaculos.component.scss'],
   standalone: true,
-  imports: [MatGridListModule, MatCardModule, NgFor, NgIf, CommonModule, MatIconModule ]
+  imports: [MatGridListModule, MatCardModule, NgFor, NgIf, CommonModule, MatIconModule, FlexLayoutModule ]
 })
 export class ObstaculosComponent {
 
@@ -54,7 +55,7 @@ export class ObstaculosComponent {
       produto: 'MINI CESTO PRETO',
       foto: 'https://i.ibb.co/ckf0Pkt/cestopretomini.png',
       preco: 19,
-      favorito: true,
+      favorito: false,
     },
     {
       id: 5,
@@ -68,14 +69,14 @@ export class ObstaculosComponent {
       produto: 'IRON ELBOW',
       foto: 'https://i.ibb.co/JHzjrrr/IRON-ELBOW.png',
       preco: 19,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 7,
       produto: 'IRON ELBOW',
       foto: 'https://i.ibb.co/Lh60q1t/Iron-Rail-removebg-preview.png',
       preco: 19,
-      favorito: false,
+      favorito: true,
     },
     {
       id: 8,

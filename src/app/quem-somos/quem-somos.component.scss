@@ -4,7 +4,7 @@
     width: 1140px;
     min-height: calc(100vh - 226px);
     h1{
-        border-bottom: 1px solid $preto;
+       border-bottom: 1px solid $preto;
     }
     .quem-somos {
         h1 {
@@ -35,8 +35,5 @@
         display: block;
         margin: auto;
         width: 88%;
-        h1{
-            border-bottom: 1px solid $preto;
-        }
     }
 }

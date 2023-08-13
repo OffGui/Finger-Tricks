@@ -82,3 +82,17 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container{
+    min-height: calc(100vh - 226px);
+    display: block;
+    margin: auto;
+    width: 90%;
+    h2{
+      border-bottom: 1px solid $preto;
+    }
+    .content {
+      padding: 16px;
+    }
+  }
+}
