@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common'
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   standalone: true,
-  imports: [MatGridListModule, MatCardModule, NgFor, NgIf, MatIconModule, CommonModule ]
+  imports: [MatGridListModule, MatCardModule, NgFor, NgIf, MatIconModule, CommonModule, FlexLayoutModule ]
 })
 export class HomeComponent {
 
@@ -107,28 +108,28 @@ export class HomeComponent {
   lancamentos2: Array<any> =[
     {
       id: 1,
-      produto: 'RODA ESPECIAL URETHANE WHITE',
+      produto: 'RODA URETHANE WHITE',
       foto: 'https://i.ibb.co/3TT5LSL/Roda-Special-urethane-white.png',
       preco: 64.90,
       favorito: false,
     },
     {
       id: 2,
-      produto: 'TRUCK CROMADO ESPECIAL PRO GOLD',
+      produto: 'TRUCK PRO GOLD',
       foto: 'https://i.ibb.co/mvZdGLT/TRUCK-PRO-GOLD-removebg-preview.png',
       preco: 39.90,
       favorito: false,
     },
     {
       id: 3,
-      produto: 'FINGERBOARD COMPLETO MINI RAMP',
+      produto: 'FINGERBOARD MINI RAMP',
       foto: 'https://i.ibb.co/MCyXTtM/Fingerboard-Completo-Mini-Ramp-1.png',
       preco: 290.00,
       favorito: false,
     },
     {
       id: 4,
-      produto: 'Fingerboard Completo - STU RECIFE',
+      produto: 'Fingerboard STU RECIFE',
       foto: 'https://i.ibb.co/Z1zVqB7/STU-nacional-recifre-removebg-preview.png',
       preco: 199.90,
       favorito: true,
