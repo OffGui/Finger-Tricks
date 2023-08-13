@@ -5,13 +5,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-trucks',
   templateUrl: './trucks.component.html',
   styleUrls: ['./trucks.component.scss'],
   standalone: true,
-  imports: [ MatGridListModule, MatCardModule, NgFor, NgIf, MatIconModule, CommonModule ]
+  imports: [ MatGridListModule, MatCardModule, NgFor, NgIf, MatIconModule, CommonModule, FlexLayoutModule ]
 })
 export class TrucksComponent {
   
@@ -38,7 +39,7 @@ export class TrucksComponent {
       produto: 'Truck PRO Silver',
       foto: 'https://i.ibb.co/25h7V0G/TRUCK-PRO-SILVER-removebg-preview.png',
       preco: 70,
-      favorito: false,
+      favorito: true,
     },
     {
       id: '0GYNMZXKSOOLKWMS',
@@ -59,7 +60,7 @@ export class TrucksComponent {
       produto: 'Truck Wide Branco 32mm',
       foto: 'https://i.ibb.co/SK8PR8K/Truck-Wide2-0-Branco32mm-removebg-preview.png',
       preco: 49.90,
-      favorito: true,
+      favorito: false,
     },
   ]
 }
