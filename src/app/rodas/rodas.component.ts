@@ -5,13 +5,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-rodas',
   templateUrl: './rodas.component.html',
   styleUrls: ['./rodas.component.scss'],
   standalone: true,
-  imports: [ MatGridListModule, MatCardModule, NgFor, NgIf, MatIconModule, CommonModule ]
+  imports: [ MatGridListModule, MatCardModule, NgFor, NgIf, MatIconModule, CommonModule, FlexLayoutModule ]
 })
 export class RodasComponent {
 
@@ -45,14 +46,14 @@ export class RodasComponent {
       produto: 'Rodas Rolamentadas Cinza',
       foto: 'https://i.ibb.co/GPZDkvn/Roda-Rolamentada-Cinza-removebg-preview.png',
       preco: 57.90,
-      favorito: true,
+      favorito: false,
     },
     {
       id: 4,
       produto: 'Rodas Rolamentadas Branca',
       foto: 'https://i.ibb.co/YTm2NxP/Rodas-Rolamentadas-White.png',
       preco: 57.90,
-      favorito: true,
+      favorito: false,
     },
     {
       id: 5,
