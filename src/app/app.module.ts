@@ -16,6 +16,8 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { FingerboardCompletoComponent } from './fingerboard-completo/fingerboard-completo.component';
 import { ObstaculosComponent } from './obstaculos/obstaculos.component';
+import { MatCardModule } from "@angular/material/card";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 // MATERIAL UI
 import { MatIconModule } from '@angular/material/icon';
@@ -42,6 +44,8 @@ registerLocaleData(ptBr)
     MatToolbarModule,
     FingerboardCompletoComponent,
     ObstaculosComponent,
+    MatCardModule,
+    FlexLayoutModule
     
   ],
   providers: [

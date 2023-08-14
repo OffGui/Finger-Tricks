@@ -1,21 +1,19 @@
-<!-- <div class="container">
-    <h2>Detalhes do Produto {{ titulo }}</h2>
-    <section class="product-details">
-        <img src="{{ foto }}" alt="Foto de {{ titulo }}" />
-        <div class="product-description">
-            <h2>{{ preco | currency }}</h2>
-            
-        </div>
-    </section>
-</div> -->
-
 <div class="container">
-    <h2>Detalhes do Produto {{ produto?.produto }}</h2>
-    <section class="product-details">
-      <img [src]="produto?.foto" [alt]="produto?.produto" />
-      <div class="product-description">
-        <h2>{{ produto?.preco | currency }}</h2>
-        <!-- Mais detalhes do produto, se necessário -->
-      </div>
-    </section>
-  </div>
+  <section class="product-details">
+    <img [src]="produto?.foto" [alt]="produto?.produto" />
+    <div class="product-description">
+      <h1>{{ produto?.produto }}</h1>
+      <ul>
+        <li>por {{ produto?.preco | currency }}</li>
+
+        <li>
+          PARCELAMOS EM ATÉ 12X!
+          <mat-icon>credit_card</mat-icon>
+        </li>
+      </ul>
+      <mat-card-actions>
+        <button mat-button routerLink="#">FINALIZAR COMPRA</button>
+      </mat-card-actions>
+    </div>
+  </section>
+</div>
