@@ -11,7 +11,7 @@ import { min } from 'rxjs';
   templateUrl: './contato.component.html',
   styleUrls: ['./contato.component.scss'],
   standalone: true,
-  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule, ReactiveFormsModule, NgIf],
+  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule, ReactiveFormsModule, NgIf ]
 })
 export class ContatoComponent {
 
@@ -38,7 +38,7 @@ export class ContatoComponent {
       return 'Este campo é obrigatório!'
     }
 
-    if(this.mensagem.hasError('minLenght()')) {
+    if(this.mensagem.hasError('minLenght(6)')) {
       return 'Mínimo de 06 caracteres obrigatório!'
     }
 
