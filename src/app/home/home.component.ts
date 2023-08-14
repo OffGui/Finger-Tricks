@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common'
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
@@ -19,7 +19,26 @@ export class HomeComponent {
   constructor(private router: Router) { }
 
   verDetalhes(itemId: string) {
-    this.router.navigate(['/detalhes', itemId])
+    const produtoSelecionado = this.lancamentos1.find(item => item.id === itemId);
+    if (produtoSelecionado) {
+      const navigationExtras: NavigationExtras = {
+        state: {
+          produto: produtoSelecionado
+        }
+      };
+      this.router.navigate(['/detalhes'], navigationExtras);
+    }
+  }
+  verDetalhes2(itemId: string) {
+    const produtoSelecionado = this.lancamentos2.find(item => item.id === itemId);
+    if (produtoSelecionado) {
+      const navigationExtras: NavigationExtras = {
+        state: {
+          produto: produtoSelecionado
+        }
+      };
+      this.router.navigate(['/detalhes'], navigationExtras);
+    }
   }
 
   toggleFavorito(index: number): void {
