@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common'
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -19,7 +19,15 @@ export class TrucksComponent {
   constructor(private router: Router) { }
 
   verDetalhes(itemId: string) {
-    this.router.navigate(['/detalhes', itemId])
+    const produtoSelecionado = this.trucks.find(item => item.id === itemId);
+    if (produtoSelecionado) {
+      const navigationExtras: NavigationExtras = {
+        state: {
+          produto: produtoSelecionado
+        }
+      };
+      this.router.navigate(['/detalhes'], navigationExtras);
+    }
   }
 
   toggleFavorito(index: number): void {

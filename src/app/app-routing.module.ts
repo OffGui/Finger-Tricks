@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'fingerboard-completo', component: FingerboardCompletoComponent },
   { path: 'obstaculos', component: ObstaculosComponent },
   { path: 'rodas', component: RodasComponent },
-  { path: 'detalhes/:id', component: DetalhesComponent},
+  { path: 'detalhes', component: DetalhesComponent },
   { path: 'trucks', component: TrucksComponent }
 
 ];
